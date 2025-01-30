@@ -1,0 +1,179 @@
+.navbar-brand {
+    width: 7.5rem;
+    height: auto;
+}
+
+.dropdown-item:hover {
+    background-color: #198754;
+}
+
+.carousel-img {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    height: 30rem;
+    object-fit: scale-down;
+}
+
+.carousel-img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background: rgb(15,15,15);
+    background: 
+        linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 0%, rgba(8,8,8,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,1) 0%, rgba(5,5,5,0) 50%, rgba(0,0,0,1) 100%),
+        linear-gradient(0deg, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 0%, rgba(8,8,8,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,1) 0%, rgba(5,5,5,0) 50%, rgba(0,0,0,1) 100%);
+}
+
+/* produtos */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#produtos {
+    padding: 4rem 0rem 3rem 0rem;
+}
+
+#produtos .nav-tabs {
+    border-color: #198754;
+}
+
+#produtos .nav-link {
+    background-color: #19875400 !important;
+    color: #198754  !important;
+}
+
+#produtos .nav-link:hover {
+    border-color: transparent !important;
+    color: hsl(152, 69%, 25%)  !important;
+}
+
+#produtos .nav-item > .active {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #ffffff  !important;
+}
+
+#produtos .nav-item:hover > .active {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #fff !important;
+}
+
+#products-numberNav {
+    display: flex;
+    justify-content: flex-end;
+
+    & .page-link {
+        background-color: rgba(255, 0, 0, 0);
+        border: none;
+        color: #198754;
+    }
+
+    & .disabled {
+        cursor: not-allowed;
+    }
+}
+
+.card {
+    position: relative;
+    outline: 0px  solid #19875400;
+    transition: outline .25s linear;
+}
+
+.card img {
+    height: 15rem;
+}
+
+.card::before {
+    position: absolute;
+    content: "";
+    background:url(../imagens/market-purchase-svgrepo-com.svg) no-repeat 50% 50% / 3rem 3rem;
+    width: 15%;
+    height: 15%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(34%) saturate(21%) hue-rotate(327deg) brightness(104%) contrast(100%);
+    cursor: not-allowed;
+}
+
+.card:hover {
+    outline: 4px  solid #198754;
+    transition: outline .25s linear;
+}
+
+.card-text-head {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #198754;
+}
+
+/*///////*/
+
+#novidades {
+    text-align: center;
+
+    & h1 {
+        color: #198754;
+        border-color: #198754 !important;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    & iframe {
+        border-radius: 2rem;
+    }
+}
+
+body {
+    height: 200vh;
+}
+
+main {
+    margin-top: 3.8rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #198754;
+
+    & .colored {
+        color: #198754;
+    }
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* Custom Scroll */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid #198754;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #198754;
+}
