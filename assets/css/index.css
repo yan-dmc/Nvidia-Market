@@ -13,6 +13,7 @@
     justify-self: center;
     height: 30rem;
     object-fit: scale-down;
+    overflow: hidden;
 }
 
 .carousel-img::before {
